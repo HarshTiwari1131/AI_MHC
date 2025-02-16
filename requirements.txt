@@ -1,0 +1,11 @@
+firebase-admin
+python-dotenv
+langchain
+langchain-openai
+Flask
+Flask-Cors
+opencv-python
+opencv-python-headless
+speechrecognition
+pyttsx3
+pyaudio

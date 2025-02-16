@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Chatbot</title>
+    <link rel="stylesheet" href="lib/css/style.css">
+</head>
+<body>
+    <div id="theme-toggle" class="theme-toggle">🌙</div>
+
+    <div id="profile-container">
+        <img id="avatar" src="lib/img/q.jpg" alt="User Avatar">
+        <div id="profile-info">
+            <p id="user-name">John Doe</p>
+            <p id="user-email">johndoe@example.com</p>
+        </div>
+    </div>
+
+
+    <nav class="navbar">
+        <div class="dropdown">
+            <a href="#" class="nav-item">Games</a>
+            <ul class="dropdown-menu">
+                <li><a href="simon-says.html">Simon Says Game</a></li>
+                <li><a href="breakout.html">Break-Out</a></li>
+                <li><a href="tilting-maze.html">Tilting-Maze</a></li>
+                <li><a href="typing.html">Typing Game</a></li>
+            </ul>
+        </div>
+        <a href="meditation-app1.html" class="nav-item">Meditation</a>
+        <a href="forum.html" class="nav-item">Help</a>
+        <a href="index.html" id="logout-link" class="nav-item">Log Out</a>
+    </nav>
+    <div class="content">
+        <h1>Welcome to the MindCare</h1>
+        <p>Select an option from the navbar to get started.</p>
+    </div>
+    <!-- Auth Container -->
+    <div id="auth-container">
+        <!-- Signup Section -->
+        <div id="signup-section">
+            <h2>Create Account</h2>
+            <input type="email" id="signup-email" placeholder="Email">
+            <input type="password" id="signup-password" placeholder="Password">
+            <button id="signup-btn">Sign Up</button>
+            <p>Already have an account? <button id="switch-to-login">Login</button></p>
+        </div>
+
+        <!-- Login Section -->
+        <div id="login-section" style="display: none;">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email">
+            <input type="password" id="login-password" placeholder="Password">
+            <button id="login-btn">Login</button>
+            <p>Don't have an account? <button id="switch-to-signup">Sign Up</button></p>
+        </div>
+    </div>
+
+    <!-- Chat Interface -->
+    <div id="chat-container" style="display: none;">
+        <div id="chat-box"></div>
+        <button id="speak-btn">
+            <span id="speak-btn-text">🎤 Speak</span>
+        </button>
+        <input type="text" id="user-input" placeholder="Type or speak ...">
+        <button id="send-btn">Send</button>
+    </div>
+
+    <script src="lib/js/script1.js"></script>
+</body>
+</html>
